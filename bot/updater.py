@@ -18,4 +18,4 @@ class Updater:
 
                 self.bot.last_update_id = update["update_id"] + 1
 
-            time.sleep(0.5)
+            time.sleep(0.5) 

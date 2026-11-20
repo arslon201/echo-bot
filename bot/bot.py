@@ -39,4 +39,4 @@ class Bot:
         pass
 
     def send_dice(self, chat_id: int, dice: str) -> None:
-        pass
+        pass  

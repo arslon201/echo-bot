@@ -10,4 +10,4 @@ class Dispatcher:
         for handler in self.handlers:
             if handler.check_update(update):
                 handler.handle_update(update)
-                break
+                break 

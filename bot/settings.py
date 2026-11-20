@@ -10,4 +10,4 @@ class Settings:
     token = os.getenv("TOKEN")
 
 
-settings = Settings()
+settings = Settings() 

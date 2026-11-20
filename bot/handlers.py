@@ -16,7 +16,6 @@ class TextHandler(BaseHandler):
         else:
             return False
 
-
 class PhotoHandler(BaseHandler):
     def check_update(self, update: dict) -> bool:
         message = update.get("message", {})
@@ -48,3 +47,36 @@ class ContactHandler(BaseHandler):
             return True
         else:
             return False
+
+
+class DocumentHandler(BaseHandler):
+    def check_update(self, update: dict) -> bool:
+        message = update.get("message", {})
+        document = message.get("document")
+        
+        if document:
+            return True
+        else:
+            return False
+        
+        
+class VoiceHandler(BaseHandler):
+    def check_update(self, update: dict) -> bool:
+        message = update.get("message", {})
+        voice = message.get("voice")
+        
+        if voice :
+            return True
+        else:
+            False
+            
+            
+class VideoHandler(BaseHandler):
+    def check_update(self, update: dict) -> bool:
+        message = update.get("message", {})
+        video = message.get("video")
+        
+        if video :
+            return True
+        else:
+            False
